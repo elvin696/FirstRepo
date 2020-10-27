@@ -31,3 +31,13 @@ git add *
 git status
 git commit -m "any comment"
 git push origin
+
+
+git REMOVE FILE
+
+rm -rf newfile
+git status
+git add --all
+git status
+git commit -m "deleted files"
+git push origin
