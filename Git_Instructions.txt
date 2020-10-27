@@ -1,0 +1,33 @@
+install -y git
+git --version 
+yum -y groupinstall "Development Tools"
+yum -y install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+
+wget https://github.com/git/git/archive/v2.10.1.tar.gz -O git.tar.gz
+
+tar -zxf git.tar.gz
+cd git-2.10.1/
+make configure
+./configure --prefix=/usr/local
+make install
+git --version
+sudo git config --global user.name "Your Name"
+sudo git config --global user.email "you@example.com"
+git config --list >> neticesi ashagidaki kimi gorsenmelidir
+(user.name=username
+user.email= username@some-domian.com
+ssh-keygen
+cd 
+cd .ssh/
+vim id_rsa.pub and copy public key to settings github
+cd 
+mkdir /github
+cd /github
+git clone "any repo link from github"
+git config --global color.ui auto
+touch newfile
+git status
+git add *
+git status
+git commit -m "any comment"
+git push origin
